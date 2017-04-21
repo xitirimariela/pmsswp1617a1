@@ -1,4 +1,29 @@
-# Το αρχείο Turtle του λεξιλογίου RDFS που περιγράφει
-# τις κλάσεις και τις ιδιότητες του ωρολογίου προγράμματος.
+PREFIX rdf:<http://purl.org/dc/elements/1.1/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX chyt:<http://dilab77.ionio.gr/swp/xitiri/vocab#>
+PREFIX foaf:<http://xmlns.com/foaf/0.1/> 
+chyt:Kathigiths rdf:type rdfs:Class .
+chyt:Eksamino rdf:type rdfs:Class .
+chyt:Dialeksh rdf:type rdfs:Class .
+chyt:Mathima rdf:type rdfs:Class .
+chyt:Aithousa rdf:type rdfs:Class .
+chyt:Kathigiths rdf:subClassOf foaf:Person .
+chyt:kathigiths rdf:type rdfs:Property .
+chyt:eksamino rdf:type rdfs:Property .
+chyt:dialeksh rdf:type rdfs:Property .
+chyt:mathima rdf:type rdfs:Property .
+chyt:aithousa rdf:type rdfs:Property .
+chyt:kathigiths rdf:range rdfs:Kathigiths .
+chyt:eksamino rdf:range xsd:string .
+chyt:dialeksh rdf:range xsd:date .
+chyt:mathima rdf:range rdfs:Mathima .
+chyt:aithousa rdf:range rdfs:Aithousa .
+chyt:kathigiths rdf:domain rdfs:Kathigiths .
+chyt:eksamino rdf:domain rdfs:Eksamino .
+chyt:dialeksh rdf:domain rdfs:Dialeksh .
+chyt:mathima rdf:domain rdfs:Mathima .
+chyt:aithousa rdf:domain rdfs:Aithousa .
+chyt:year rdf:domain rdfs:Year.
 
 
